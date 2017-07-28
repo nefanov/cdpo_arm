@@ -1,20 +1,20 @@
 /* great pattern for using SIMD! */
 void f1()
 {
-	register short *to, *from;
+	register short *dst, *from;
 	register count;
 	{
 		register n = (count+7)/8;
 		switch (count % 8) {
 			case 0:do {
-				*to = * from++;
-				case 7:	*to = * from++;
-				case 6:	*to = * from++;
-				case 5: *to = * from++;
-				case 4: *to = * from++;
-				case 3: *to = * from++;
-				case 2: *to = * from++;
-				case 1: *to = * from++;
+				*to = *src++;
+				case 7:	*dst = *src++;
+				case 6:	*dst = *src++;
+				case 5: *dst = *src++;
+				case 4: *dst = *src++;
+				case 3: *dst = *src++;
+				case 2: *dst = *src++;
+				case 1: *dst = *src++;
 			} while (--n > 0);
 	}
 	} 
