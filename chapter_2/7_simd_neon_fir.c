@@ -1,4 +1,4 @@
-/* try to rewrite the algo in attempt to use SIMD /
+/* try to rewrite the algo in attempt to use SIMD */
 
 void fir(const int16_t *x, const int16_t *c, int 32_t *y, 
 	const uint32_t num_samples)
