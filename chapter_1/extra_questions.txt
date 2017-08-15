@@ -1,0 +1,8 @@
+1) stm r2, {r4,r6}             
+   ldmia r2, {r4-r6}
+ 
+2) _start:
+   ...
+   add r3, pc, #1   @ increase value of PC by 1 and add it to R3
+   bx r3            @ branch + exchange to the address in R3 -> ???
+    
